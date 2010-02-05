@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = 'threaded_processor'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.summary = "Threaded processor with specifiable thread pool size."
   s.description = %{A simple wrapper for Ruby Threads and SizedQueue.}
   s.files = Dir['lib/*.rb']
