@@ -1,5 +1,6 @@
 ThreadedProcessor : A very simple wrapper for sized queue multithreading with Ruby
-Usage:
+
+= Usage
 
 object_list = %w(1..100).to_a
 threads = 5
@@ -17,6 +18,9 @@ tp << 5
 tp.block = Proc.new{|x| puts x}
 tp.max_threads = 5
 tp.run!
+
+= Building
+rake gem:build
 
 (c)2010 Patrick Morgan under MIT License
 patrick@patrick-morgan.net
