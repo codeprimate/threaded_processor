@@ -1,4 +1,26 @@
-VERSION = 0.1
+# ThreadedProcessor : A very simple wrapper for sized queue multithreading with Ruby
+# 
+# = Usage
+# 
+#   object_list = %w(1..100).to_a
+#   threads = 5
+#   tp = ThreadedProcessor.new(object_list,threads) do |obj|
+#     puts obj
+#   end
+#   tp.run!
+# 
+# OR
+# 
+#   tp = ThreadedProcessor.new
+#   tp.list = [1,2,3]
+#   tp << 4
+#   tp << 5
+#   tp.block = Proc.new{|x| puts x}
+#   tp.max_threads = 5
+#   tp.run!
+
+
+VERSION = "0.1.1"
 
 require 'thread'
 
